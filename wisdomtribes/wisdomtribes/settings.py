@@ -76,24 +76,18 @@ WSGI_APPLICATION = 'wisdomtribes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'dct61r2dpfs4kg',
-#         'USER': 'ovaxsqptutpouj',
-#         'PASSWORD': 'ccaea7a5365b2dabbf57edffd47a0d952534847058c374e70ff2ae71a56e63f8',
-#         'HOST': 'ec2-3-224-164-189.compute-1.amazonaws.com',
-#         'PORT': '5432'
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase', # This is where you put the name of the db file. 
-                 # If one doesn't exist, it will be created at migration time.
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dct61r2dpfs4kg',
+        'USER': 'ovaxsqptutpouj',
+        'PASSWORD': 'ccaea7a5365b2dabbf57edffd47a0d952534847058c374e70ff2ae71a56e63f8',
+        'HOST': 'ec2-3-224-164-189.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
